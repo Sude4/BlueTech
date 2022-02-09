@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.toggle{
+    font-size: 30px;
+    color: wheat;
+    float: left;
+    line-height: 45px;
+    margin-left: 5%;
+    cursor: pointer;
+    display: none;
+    
+    
+}
+nav{
+    background-color: #0001;
+    opacity:0.8;
+    filter:alpha(opacity=60);
+    height:45px ;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    border-right: 1px solid #54879d;
+}
+ul{
+    float: left;
+    margin-left: 5%;
+}
+ul li{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+}
+ul li a{
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 75px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    
+}
+ul li:hover{
+    
+    color: #fff;
+}
+@media screen and (max-width: 1052px) {
+    .toggle{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        top: -400px;
+        z-index: -1;
+        margin-top: -15px;
+        right: 0;
+        left: 0;
+        width: 200px;
+        background-color: rgb(91, 250, 210);
+        display: inline-block;
+        transition: top .4s;
+        margin-left: 0;
+    }
+    ul.show{
+        top: 60px;
+    }
+    ul li{
+        top: 0;
+        width: 100%;
+        float: left;
+        text-align: center;
+
+    }
+}
+@media screen and (max-width: 800px){
+    ul{
+        width: 100%;
+    }
+}
+.sub-menu-1{
+    display: none;
+   
+   
+    
+}
+.container ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgba(168, 120, 120, 0.067);
+    
+}
+.container ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    background-color: #404242;
+    
+}
+.container ul li:hover .sub-menu-1 ul li{
+    width: 250px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    
+    text-align: center;
+}
+.container ul li:hover .sub-menu-1 ul li a:hover{
+    color: white;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    padding: 8px 20px;
+    
+    border-radius: 35px;
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 15px;
+    transition: 1s all ease;
+    
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    color: #2a2b2a;
+}
+/*bg image*/
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrap{
+    width: 100%;
+    height: 60px;
+    margin: 0;
+   
+}
+
+.headerResim{
+    width: 1950px;
+    height: 850px;
+
+
+}
+/*Resmin ortasındaki yazı*/
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-weight: bolder;
+    
+  }
+  .centered h4{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    padding-bottom: 20px;
+
+
+  }
+  .centered h1{
+    
+      font-weight: 700;
+    font-style: normal;
+font-size: 68px;
+text-transform: uppercase;
+line-height: 1em;
+color: #fff;
+    text-align: center;
+   
+    
+  }
+  .btnDevam{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(219, 233, 223);
+    padding: 8px 20px;
+    background-color:  rgb(19, 68, 4);
+    border-radius: 35px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 1s all ease;
+    float: right;
+    margin-right: 400px;
+  }
+  .btnDevam:hover{
+    background-color: rgb(3, 83, 20);
+  }
+
+  /* Resmin altındaki yazı*/
+  .yazi h3{
+      padding-top: 120px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Rowdies', cursive;
+    font-weight: bold;
+    
+  }
+  .yazi span{
+      
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+    text-align: center;
+    float:right;
+    margin-right: 430px;
+    color: rgb(90, 82, 82);
+    letter-spacing: 2px;
+
+  }
+  /*yazi2*/
+  .yazi2 {
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 45px;
+    margin-left: 5%;
+    cursor: pointer;
+    
+  }
+
+.yazi2  li{
+    float: right;
+    position: relative;
+   
+}
+.yazi2 li a{
+    margin-left: 180px;
+    font-size: 32px;
+    font-weight:300;
+    line-height: 45px;
+    color: rgb(71, 64, 64);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2px;
+    font-family: 'Rowdies', cursive;
+    
+}
+ 
+    /*dağ ve hayvan*/
+  
+.ornek{
+    width: 900px;
+    margin:auto;
+    }
+    .saga-kaydir{
+    float:left;
+    padding-top:50px;
+    padding-right: 80px;
+    margin-right:20px;
+    width: 530px;
+    height: auto;
+    }
+     
+    .sola-kaydir{
+    float:right;
+    padding-top:30px;
+    width: 470px;
+    height: auto;
+    }
+    .aboutUss{
+        color: rgb(128, 123, 123);
+        padding-top: 80px;
+
+    }
+     .p1{
+        
+         padding-top: 295px;
+         float:center;
+        font-size: 22px;
+     }
+     .member{
+        color: rgb(128, 123, 123);
+     }
+     .p2{
+         float: center;
+         padding-top: 120px;
+         margin-right: 600px;
+         font-size: 21px;
+        
+     }
+.btnDevam1{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(219, 233, 223);
+    padding: 15px 25px;
+    text-align: center;
+    background-color:  rgb(5, 71, 30);
+    border-radius: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 1s all ease;
+    
+    margin-left: 75px;
+  }
+  .btnDevam1:hover{
+    background-color: rgb(17, 110, 48);
+  }
+  .btnDevam2{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(219, 233, 223);
+    text-align: center;
+    background-color:  rgb(5, 71, 30);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 1s all ease;
+    padding:15px 25px;
+    margin-top: 32px;
+    margin-left: 75px;
+
+  }
+  .btnDevam2:hover{
+    background-color: rgb(17, 110, 48);
+  }
+  /*partners and img*/
+.partners{
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 390px;
+    margin-right: 400px;
+}
+.partners h2{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Rowdies', cursive;
+    font-size: 45px;
+    margin-bottom: 40px;
+   
+}
+.partnersImg{
+    align-items: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    width: 60%;
+}
+/*Slideshow*/
+.slider{
+	position: relative;
+	width: 60%;
+	background: white; 
+    margin-left: 450px;
+}
+.myslide{
+	height: 655px;
+	display: none;
+	overflow: hidden;
+}
+.news{
+    margin-left: 10px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: rgb(91, 92, 91);
+    opacity: 70%;
+}
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #0a5e0e; 
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.active, .dot:hover{
+	border-color: #195814; 
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: #ec0f59; 
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+        
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+}
+/*footer*/
+footer{
+    background: rgb(75, 74, 74);
+    opacity: 80%;
+    height: auto;
+    width: 100vw;
+    font-family: "open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    
+}
+.socials li{
+    margin:  10px;
+    padding: 15px;
+}
+.socials a i{
+    font-size: 3.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #000000;
+   
+}
+.footer-bottom{
+    background: rgb(0, 0, 0);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
